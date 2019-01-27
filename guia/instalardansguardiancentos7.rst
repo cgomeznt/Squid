@@ -77,11 +77,24 @@ Con los pasos anteriores ya tenemos configurado DANSGUARDIAN con Squid, los cual
 Si deseamos hacer un filtrado con campos específicos, modificamos el archivo /etc/dansguardian/list/bannedphraselist y dentro de éste, se agregan las palabras o frases que deseemos bloquear; en este caso estaremos bloqueando el contenido que se relacione con las palabras: oso, perro, cartera.::
 
 	# vi /etc/dansguardian/list/bannedphraselist
-	<sex>,<xxx>,<porno>,<4chan>
-	<oso>,< oso >,< oso>,<oso >,<osos>,< osos >,< osos>,<osos >
-	<perro>,< perro >,<perro >,< perro>
+	<sex>
+	<xxx>
+	<porno>
+	<4chan>
+	<oso>
+	< oso >
+	< oso>
+	<oso >
+	<osos>
+	< osos >
+	< osos>
+	<osos >
+	<perro>
+	< perro >
+	<perro >
+	< perro>
 
-Debemos asegurarnos en el archivo de configuración tener las siguientes lineas, ojo no todas seguramente las utilizamos.::
+Debemos asegurarnos en el archivo de configuración  **dansguardianf1.conf** tener las siguientes lineas::
 
 	bannedphraselist = '/etc/dansguardian/list/bannedphraselist'
 	exceptionphraselist = '/etc/dansguardian/list/exceptionphraselist'
@@ -109,3 +122,12 @@ Detenemos el DANSGUARDIAN y lo iniciamos nuevamente::
 
 	# dansguardian
 
+Nos vamos al cliente y verificamos
+
+.. figure:: ../images/04.png
+
+
+.. figure:: ../images/05.png
+
+
+.. figure:: ../images/06.png
