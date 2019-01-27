@@ -28,6 +28,7 @@ Editar el archivo de configuración y nos vamos a las configuraciones de RED. Va
 * Puerto donde atenderar el DANSGUARDIAN las peticiones de los clientes.
 * El proxyip que es la IP en donde esta el Squid.
 * Y el proxyport que es la puerto en donde esta el Squid.
+::
 
 	# vi /etc/dansguardian/dansguardian.conf
 
