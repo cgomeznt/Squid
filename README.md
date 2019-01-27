@@ -13,6 +13,8 @@ http://www.squid-cache.org/
 * [Usando la autenticación básica con Squid](guia/authenticationbasic.rst)
 * [Bloqueo de sitios web](guia/blocksiteweb.rst)
 * [Cambio de puerto de Squid](guia/changeport.rst)
+* [Instalar DANSGUARDIAN en CentOS 7](guia/instalardansguardiancentos7.rst)
+
 
 
 
