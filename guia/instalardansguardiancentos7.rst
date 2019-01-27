@@ -131,3 +131,6 @@ Nos vamos al cliente y verificamos
 
 
 .. figure:: ../images/06.png
+
+
+NOTA: DANSGUARDIAN no es capaz de filtrar cuando es por https, en este caso debemos utilizar los url
