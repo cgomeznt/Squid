@@ -122,7 +122,7 @@ Detenemos el DANSGUARDIAN y lo iniciamos nuevamente::
 
 	# dansguardian
 
-Nos vamos al cliente y verificamos
+Nos vamos al cliente y verificamos, verifica **sex.com** y fíjate que va por https, todas las demás que van por http seran bloqueadas, pero no las https
 
 .. figure:: ../images/04.png
 
@@ -134,3 +134,23 @@ Nos vamos al cliente y verificamos
 
 
 NOTA: DANSGUARDIAN no es capaz de filtrar cuando es por https, en este caso debemos utilizar los url
+
+En ese caso utilizaríamos bannedsitelist y agrega sex.com::
+
+	# vi /etc/dansguardian/list/bannedphraselist
+	sex.com
+
+Detenemos el DANSGUARDIAN y lo iniciamos nuevamente::
+
+	# ps -ef | grep dansguardian | grep -w 1
+	dansgua+  2517     1  0 23:01 ?        00:00:00 dansguardian
+	root      2561  1276  0 23:04 pts/1    00:00:00 grep --color=auto dansguardian
+	# kill -15 2517
+
+	# dansguardian
+
+
+Verificamos y ahora si esta bloqueada, pero por banned site
+
+.. figure:: ../images/07.png
+
